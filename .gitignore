@@ -1,0 +1,19 @@
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Deno dependencies and caches
+deno.lock
+.deno/
+
+# Node.js artifacts (if any)
+node_modules/
+
+# Logs
+*.log
+
+# Ignore any temporary or system files
+.DS_Store
+Thumbs.db
+

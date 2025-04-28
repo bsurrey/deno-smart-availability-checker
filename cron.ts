@@ -8,7 +8,7 @@ export async function checkForUpdates() {
 
     const data = await fetchProductData();
 
-    if (data?.stock?.status !== 'outOfStock') {
+    if (data?.stock?.status === 'inStock' || data?.stock?.stockLevelStatus === 'inStock') {
       await incrementCounter(["success"]);
       await sendEmailNotification();
     }
